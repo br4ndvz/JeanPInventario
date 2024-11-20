@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reportes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+        background: linear-gradient(to right, #fce043, #f58b33);
+        color: #1a1a6b;
+      }
+      .logo {
+        width: 100px;
+      }
+      .btn-section {
+        font-weight: bold;
+        font-size: 1.2rem;
+        background-color: #0f1568;
+        color: #f6f6f7;
+        border: none;
+        border-radius: 30px;
+        width: 100%;
+        padding: 15px;
+      }
+      .icon-folder {
+        width: 30px;
+      }
+      .navbar {
+            background: rgba(10, 92, 124, 0.445); /* Fondo semi-transparente */
+            backdrop-filter: blur(10px); /* Efecto de cristal */
+            -webkit-backdrop-filter: blur(10px); /* Compatibilidad con navegadores WebKit */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea sutil */
+        }
+        .navbar-brand, .nav-link, .form-control, .btn {
+            color: rgb(15, 16, 122) !important;
+        }
+        .navbar-toggler-icon {
+            filter: invert(1); /* Asegura que el icono sea visible sobre fondos claros */
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #0d73ad;
+        }
+        .form-control {
+            border-radius: 30px;
+            background: rgba(224, 168, 46, 0.603);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgb(255, 255, 255);
+        }
+        .form-control::placeholder {
+            color: rgba(71, 3, 14, 0.801);
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .content {
+          margin-top: 70px;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="imagen/logoGrande.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+              <span class="fw-bold">JEAN PIAGET</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="#" onclick="navigateTo('Home.html')">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" onclick="navigateTo('reportes.html')">REPORTES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" onclick="navigateTo('vista.html')">USUARIOS</a>
+                  </li>
+                  </button>
+              </form>
+          </div>
+      </div>
+  </nav>
+    <div class="container content py-5">
+        <div class="row mb-5">
+          <div class="col-md-6 d-flex align-items-center">
+            <img src="imagen/logonombreafuera.png" alt="Logo Jean Piaget">
+          </div>
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <h1 class="text-custom">REPORTES</h1>
+          </div>
+        </div>
+
+      <!-- Botones de secciones -->
+      <div class="row gy-4">
+        <!-- Prescolar: Ícono primero, luego botón -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <img src="imagen/carpeta-abierta.png" alt="Ícono carpeta" class="icon-folder me-2 order-first">
+          <button class="btn-section order-last">PRESCOLAR</button>
+        </div>
+        
+        <!-- Primaria: Botón primero, luego ícono -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <button class="btn-section order-first">PRIMARIA</button>
+          <img src="imagen/carpeta-abierta.png" alt="Ícono carpeta" class="icon-folder ms-2 order-last">
+        </div>
+        
+        <!-- Áreas Comunes: Ícono primero, luego botón -->
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <img src="imagen/carpeta-abierta.png" alt="Ícono carpeta" class="icon-folder me-2 order-first">
+          <button class="btn-section order-last">AREAS COMUNES</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para redirigir a otras páginas
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+  </body>
+</html>

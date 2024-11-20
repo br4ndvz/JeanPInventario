@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<style>
+.bg-custom {
+   background: linear-gradient(90deg, #f7e14d, #f58b33) ; 
+}
+.logo{
+    max-width: 100%;
+    height: auto;
+}
+.text-custom{
+    color:#0a054e;
+    font-weight: bold;
+}
+.btn-custom{
+    background-color: #a19965;
+    color: #0a054e;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100% ;
+    text-align: center;
+    padding-left: 30px;
+}
+.icon-box{
+    background-color: #e1e0e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+
+}
+.label-custom{
+    background-color:#0a054e;
+    color: #f7e14d;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 100% ;
+    text-align: left;
+    padding-left: 30px;
+
+}
+.navbar {
+            background: rgba(10, 92, 124, 0.445); /* Fondo semi-transparente */
+            backdrop-filter: blur(10px); /* Efecto de cristal */
+            -webkit-backdrop-filter: blur(10px); /* Compatibilidad con navegadores WebKit */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Línea sutil */
+        }
+        .navbar-brand, .nav-link, .form-control, .btn {
+            color: rgb(15, 16, 122) !important;
+        }
+        .navbar-toggler-icon {
+            filter: invert(1); /* Asegura que el icono sea visible sobre fondos claros */
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #0d73ad;
+        }
+        .form-control {
+            border-radius: 30px;
+            background: rgba(224, 168, 46, 0.603);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgb(255, 255, 255);
+        }
+        .form-control::placeholder {
+            color: rgba(71, 3, 14, 0.801);
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+        .content {
+          margin-top: 70px;
+        }
+</style>
+<title>Vista de USUARIOS</title>
+</head>
+<body class="bg-custom">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="imagen/logoGrande.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top me-2">
+                <span class="fw-bold">JEAN PIAGET</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" onclick="navigateTo('Home.html')">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigateTo('reportes.html')">REPORTES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="navigateTo('vista.html')">USUARIOS</a>
+                    </li>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container content py-5">
+        <div class="row ">
+            <div class="col-md-6 d-flex align-items-center">
+                <img src="imagen/logonombreafuera.png" alt="logo Jean Piaget" class="logo">
+            </div>
+            <div class="col-md-6 text-end">
+                <h1 class="text-custom">VISTA DE USUARIOS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table  table-primary table-bordered border-primary">
+                    <thead>
+                        <tr>
+                            <th scope ="col"> id</th>
+                            <th scope ="col"> nombre</th>
+                            <th scope ="col"> email</th>
+                            <th scope ="col"> telefono</th>
+                            <th scope ="col"> tipo</th>
+                            <th scope ="col"> contraseña</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table> 
+         
+                <div class="row ">
+                    <div class="col-md-2">
+                        <label class="label-custom">Acciones</label>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col-md-1">
+                        <button class="btn btn-lg btn-sm btn-custom">Agregar</button>
+                        <button class="btn btn-lg btn-sm btn-custom">Eliminar</button>
+                        <button class="btn btn-lg btn-sm btn-custom">Actualizar</button>
+                    </div>
+                </div>
+        </div>
+
+
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Función para redirigir a otras páginas
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
